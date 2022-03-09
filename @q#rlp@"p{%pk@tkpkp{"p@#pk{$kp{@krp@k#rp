@@ -104,6 +104,9 @@ TextButton_2.Font = Enum.Font.GothamBlack
 TextButton_2.Text = "x"
 TextButton_2.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextButton_2.TextSize = 14.000
+TextButton_2.MouseButton1Down:Connect(function()
+	OfficialBitZKeySystem:Destroy()
+end)
 
 UICorner_5.Parent = TextButton_2
 
