@@ -29,7 +29,7 @@ OfficialBitZKeySystem.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 MainGui.Name = "MainGui"
 MainGui.Parent = OfficialBitZKeySystem
 MainGui.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-MainGui.Position = UDim2.new(0.3644315, 0, 0.245530397, 0)
+MainGui.Position = UDim2.new(0.402973175, 0, 0.245530397, 0)
 MainGui.Size = UDim2.new(0, 371, 0, 427)
 
 UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(85, 170, 255)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
@@ -113,7 +113,7 @@ UICorner_5.Parent = TextButton_2
 WrongKey.Name = "WrongKey"
 WrongKey.Parent = OfficialBitZKeySystem
 WrongKey.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
-WrongKey.Position = UDim2.new(0.373906702, 0, 0.259833127, 0)
+WrongKey.Position = UDim2.new(0.412536442, 0, 0.259833127, 0)
 WrongKey.Size = UDim2.new(0, 345, 0, 403)
 WrongKey.Visible = false
 
@@ -151,7 +151,9 @@ TextButton_3.TextWrapped = true
 
 UICorner_8.Parent = TextButton_3
 
-local function AKIGK_fake_script() -- MainGui.LocalScript 
+-- Scripts:
+
+local function XVNQNZO_fake_script() -- MainGui.LocalScript 
 	local script = Instance.new('LocalScript', MainGui)
 
 	local button = script.Parent
@@ -244,8 +246,8 @@ local function AKIGK_fake_script() -- MainGui.LocalScript
 	end
 	animate()
 end
-coroutine.wrap(AKIGK_fake_script)()
-local function EDDWJF_fake_script() -- TextBox.LocalScript 
+coroutine.wrap(XVNQNZO_fake_script)()
+local function YNAZSVQ_fake_script() -- TextBox.LocalScript 
 	local script = Instance.new('LocalScript', TextBox)
 
 	script.Parent.Parent.TextButton.MouseButton1Down:Connect(function()
@@ -257,8 +259,8 @@ local function EDDWJF_fake_script() -- TextBox.LocalScript
 		end
 	end)
 end
-coroutine.wrap(EDDWJF_fake_script)()
-local function PGXRIBY_fake_script() -- Frame.LocalScript 
+coroutine.wrap(YNAZSVQ_fake_script)()
+local function HHLXDJQ_fake_script() -- Frame.LocalScript 
 	local script = Instance.new('LocalScript', Frame)
 
 	local button = script.Parent
@@ -351,12 +353,12 @@ local function PGXRIBY_fake_script() -- Frame.LocalScript
 	end
 	animate()
 end
-coroutine.wrap(PGXRIBY_fake_script)()
-local function PDWJWTK_fake_script() -- TextButton_3.LocalScript 
+coroutine.wrap(HHLXDJQ_fake_script)()
+local function BVXHLS_fake_script() -- TextButton_3.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_3)
 
 	script.Parent.MouseButton1Down:Connect(function()
 		script.Parent.Parent.Visible = false
 	end)
 end
-coroutine.wrap(PDWJWTK_fake_script)()
+coroutine.wrap(BVXHLS_fake_script)()
