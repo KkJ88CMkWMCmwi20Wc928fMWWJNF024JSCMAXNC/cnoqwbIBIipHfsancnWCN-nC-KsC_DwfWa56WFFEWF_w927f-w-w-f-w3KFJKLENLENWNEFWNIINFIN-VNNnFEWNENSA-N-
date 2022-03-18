@@ -25,6 +25,7 @@ local UICorner_8 = Instance.new("UICorner")
 OfficialBitZKeySystem.Name = "OfficialBitZKeySystem"
 OfficialBitZKeySystem.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
 OfficialBitZKeySystem.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+OfficialBitZKeySystem.ResetOnSpawn = false
 
 MainGui.Name = "MainGui"
 MainGui.Parent = OfficialBitZKeySystem
@@ -50,7 +51,7 @@ TextBox.BackgroundColor3 = Color3.fromRGB(70, 70, 70)
 TextBox.Position = UDim2.new(0.171014488, 0, 0.600496292, 0)
 TextBox.Size = UDim2.new(0, 227, 0, 63)
 TextBox.Font = Enum.Font.GothamBlack
-TextBox.Text = "Key Here!"
+TextBox.Text = ""
 TextBox.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextBox.TextSize = 14.000
 
@@ -83,6 +84,390 @@ TextButton.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextButton.TextScaled = true
 TextButton.TextSize = 14.000
 TextButton.TextWrapped = true
+TextButton.MouseButton1Down:Connect(function()
+	if TextBox.Text == "fw85f4c_54e" then
+		OfficialBitZKeySystem:Destroy()
+		local SimpleExploitGui = Instance.new("ScreenGui")
+		local RBGFRAME = Instance.new("Frame")
+		local UIGradient = Instance.new("UIGradient")
+		local UICorner = Instance.new("UICorner")
+		local MainFrame = Instance.new("Frame")
+		local UICorner_2 = Instance.new("UICorner")
+		local Options = Instance.new("Frame")
+		local UICorner_3 = Instance.new("UICorner")
+		local WalkSpeedJumpPower = Instance.new("TextButton")
+		local UICorner_4 = Instance.new("UICorner")
+		local MiscButton = Instance.new("TextButton")
+		local UICorner_5 = Instance.new("UICorner")
+		local InfoButton = Instance.new("TextButton")
+		local UICorner_6 = Instance.new("UICorner")
+		local DestroyUI = Instance.new("TextButton")
+		local UICorner_7 = Instance.new("UICorner")
+		local TextLabel = Instance.new("TextLabel")
+		local UICorner_8 = Instance.new("UICorner")
+		local Walkjumpframe = Instance.new("Frame")
+		local UICorner_9 = Instance.new("UICorner")
+		local Walk = Instance.new("TextBox")
+		local Jump = Instance.new("TextBox")
+		local TextButton = Instance.new("TextButton")
+		local UICorner_10 = Instance.new("UICorner")
+		local MiscFrame = Instance.new("Frame")
+		local UICorner_11 = Instance.new("UICorner")
+		local TextButton_2 = Instance.new("TextButton")
+		local UICorner_12 = Instance.new("UICorner")
+		local TextButton_3 = Instance.new("TextButton")
+		local UICorner_13 = Instance.new("UICorner")
+		local InfoFrame = Instance.new("Frame")
+		local UICorner_14 = Instance.new("UICorner")
+		local TextLabel_2 = Instance.new("TextLabel")
+
+		SimpleExploitGui.Name = "SimpleExploitGui"
+		SimpleExploitGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+		SimpleExploitGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+		SimpleExploitGui.ResetOnSpawn = false
+
+		RBGFRAME.Name = "RBGFRAME"
+		RBGFRAME.Parent = SimpleExploitGui
+		RBGFRAME.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		RBGFRAME.Position = UDim2.new(0.341848254, 0, 0.311084628, 0)
+		RBGFRAME.Size = UDim2.new(0, 591, 0, 361)
+		RBGFRAME.Active = true
+		RBGFRAME.Draggable = true
+
+		UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(85, 255, 255)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(85, 255, 255))}
+		UIGradient.Parent = RBGFRAME
+
+		UICorner.Parent = RBGFRAME
+
+		MainFrame.Name = "MainFrame"
+		MainFrame.Parent = RBGFRAME
+		MainFrame.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+		MainFrame.Position = UDim2.new(0.0152284261, 0, 0.0277008303, 0)
+		MainFrame.Size = UDim2.new(0, 573, 0, 340)
+
+		UICorner_2.Parent = MainFrame
+
+		Options.Name = "Options"
+		Options.Parent = MainFrame
+		Options.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+		Options.Position = UDim2.new(0, 0, 0.10882353, 0)
+		Options.Size = UDim2.new(0, 128, 0, 303)
+
+		UICorner_3.CornerRadius = UDim.new(0, 1)
+		UICorner_3.Parent = Options
+
+		WalkSpeedJumpPower.Name = "WalkSpeed/JumpPower"
+		WalkSpeedJumpPower.Parent = Options
+		WalkSpeedJumpPower.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+		WalkSpeedJumpPower.Size = UDim2.new(0, 128, 0, 42)
+		WalkSpeedJumpPower.Font = Enum.Font.GothamBlack
+		WalkSpeedJumpPower.Text = "WalkSpeed/JumpPower"
+		WalkSpeedJumpPower.TextColor3 = Color3.fromRGB(255, 255, 255)
+		WalkSpeedJumpPower.TextScaled = true
+		WalkSpeedJumpPower.TextSize = 10.000
+		WalkSpeedJumpPower.TextWrapped = true
+
+		UICorner_4.CornerRadius = UDim.new(0, 1)
+		UICorner_4.Parent = WalkSpeedJumpPower
+
+		MiscButton.Name = "MiscButton"
+		MiscButton.Parent = Options
+		MiscButton.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+		MiscButton.Position = UDim2.new(0, 0, 0.138613865, 0)
+		MiscButton.Size = UDim2.new(0, 128, 0, 42)
+		MiscButton.Font = Enum.Font.GothamBlack
+		MiscButton.Text = "Misc"
+		MiscButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+		MiscButton.TextScaled = true
+		MiscButton.TextSize = 10.000
+		MiscButton.TextWrapped = true
+
+		UICorner_5.CornerRadius = UDim.new(0, 1)
+		UICorner_5.Parent = MiscButton
+
+		InfoButton.Name = "InfoButton"
+		InfoButton.Parent = Options
+		InfoButton.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+		InfoButton.Position = UDim2.new(0, 0, 0.297029704, 0)
+		InfoButton.Size = UDim2.new(0, 128, 0, 42)
+		InfoButton.Font = Enum.Font.GothamBlack
+		InfoButton.Text = "Info"
+		InfoButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+		InfoButton.TextScaled = true
+		InfoButton.TextSize = 10.000
+		InfoButton.TextWrapped = true
+
+		UICorner_6.CornerRadius = UDim.new(0, 1)
+		UICorner_6.Parent = InfoButton
+
+		DestroyUI.Name = "DestroyUI"
+		DestroyUI.Parent = Options
+		DestroyUI.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+		DestroyUI.Position = UDim2.new(0, 0, 0.834983528, 0)
+		DestroyUI.Size = UDim2.new(0, 128, 0, 50)
+		DestroyUI.Font = Enum.Font.GothamBlack
+		DestroyUI.Text = "Destroy UI"
+		DestroyUI.TextColor3 = Color3.fromRGB(255, 255, 255)
+		DestroyUI.TextSize = 14.000
+		DestroyUI.MouseButton1Down:Connect(function()
+			SimpleExploitGui:Destroy()
+		end)
+
+		UICorner_7.CornerRadius = UDim.new(0, 1)
+		UICorner_7.Parent = DestroyUI
+
+		TextLabel.Parent = MainFrame
+		TextLabel.BackgroundColor3 = Color3.fromRGB(70, 70, 70)
+		TextLabel.Size = UDim2.new(0, 573, 0, 37)
+		TextLabel.Font = Enum.Font.GothamBlack
+		TextLabel.Text = "Classic Exploit Gui"
+		TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+		TextLabel.TextScaled = true
+		TextLabel.TextSize = 14.000
+		TextLabel.TextWrapped = true
+
+		UICorner_8.CornerRadius = UDim.new(0, 1)
+		UICorner_8.Parent = TextLabel
+
+		Walkjumpframe.Name = "Walkjumpframe"
+		Walkjumpframe.Parent = MainFrame
+		Walkjumpframe.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+		Walkjumpframe.Position = UDim2.new(0.223385692, 0, 0.10882353, 0)
+		Walkjumpframe.Size = UDim2.new(0, 445, 0, 303)
+		Walkjumpframe.Visible = false
+
+		UICorner_9.Parent = Walkjumpframe
+
+		Walk.Name = "Walk"
+		Walk.Parent = Walkjumpframe
+		Walk.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		Walk.Position = UDim2.new(0.0831460655, 0, 0.283828378, 0)
+		Walk.Size = UDim2.new(0, 135, 0, 50)
+		Walk.Font = Enum.Font.SourceSans
+		Walk.Text = ""
+		Walk.TextColor3 = Color3.fromRGB(0, 0, 0)
+		Walk.TextSize = 14.000
+
+		Jump.Name = "Jump"
+		Jump.Parent = Walkjumpframe
+		Jump.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		Jump.Position = UDim2.new(0.626966238, 0, 0.27722773, 0)
+		Jump.Size = UDim2.new(0, 135, 0, 50)
+		Jump.Font = Enum.Font.SourceSans
+		Jump.Text = ""
+		Jump.TextColor3 = Color3.fromRGB(0, 0, 0)
+		Jump.TextSize = 14.000
+
+		TextButton.Parent = Walkjumpframe
+		TextButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		TextButton.Position = UDim2.new(0.274157315, 0, 0.62046206, 0)
+		TextButton.Size = UDim2.new(0, 200, 0, 50)
+		TextButton.Font = Enum.Font.GothamBlack
+		TextButton.Text = "Ok"
+		TextButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+		TextButton.TextScaled = true
+		TextButton.TextSize = 14.000
+		TextButton.TextWrapped = true
+		TextButton.MouseButton1Down:Connect(function()
+			game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = Walk.Text
+			game.Players.LocalPlayer.Character.Humanoid.JumpPower = Jump.Text
+		end)
+
+		UICorner_10.Parent = TextButton
+
+		MiscFrame.Name = "MiscFrame"
+		MiscFrame.Parent = MainFrame
+		MiscFrame.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+		MiscFrame.Position = UDim2.new(0.223385692, 0, 0.10882353, 0)
+		MiscFrame.Size = UDim2.new(0, 445, 0, 303)
+		MiscFrame.Visible = false
+
+		UICorner_11.CornerRadius = UDim.new(0, 1)
+		UICorner_11.Parent = MiscFrame
+
+		TextButton_2.Parent = MiscFrame
+		TextButton_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		TextButton_2.Position = UDim2.new(0.274157315, 0, 0.138613865, 0)
+		TextButton_2.Size = UDim2.new(0, 200, 0, 50)
+		TextButton_2.Font = Enum.Font.GothamBlack
+		TextButton_2.Text = "Bypass Flex Fight Shit Anti Cheat"
+		TextButton_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+		TextButton_2.TextScaled = true
+		TextButton_2.TextSize = 14.000
+		TextButton_2.TextWrapped = true
+		TextButton_2.MouseButton1Down:Connect(function()
+			game.Players.LocalPlayer.Character.AntiExploit:Destroy()
+			game.Players.LocalPlayer.Character.AntiExploit2:Destroy()
+		end)
+
+		UICorner_12.Parent = TextButton_2
+
+		TextButton_3.Parent = MiscFrame
+		TextButton_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		TextButton_3.Position = UDim2.new(0.274157315, 0, 0.455445528, 0)
+		TextButton_3.Size = UDim2.new(0, 200, 0, 50)
+		TextButton_3.Font = Enum.Font.GothamBlack
+		TextButton_3.Text = "Infinite Yield"
+		TextButton_3.TextColor3 = Color3.fromRGB(0, 0, 0)
+		TextButton_3.TextScaled = true
+		TextButton_3.TextSize = 14.000
+		TextButton_3.TextWrapped = true
+		TextButton_3.MouseButton1Down:Connect(function()
+			loadstring(game:HttpGet(('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'),true))()
+		end)
+
+		UICorner_13.Parent = TextButton_3
+
+		InfoFrame.Name = "InfoFrame"
+		InfoFrame.Parent = MainFrame
+		InfoFrame.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+		InfoFrame.Position = UDim2.new(0.223385692, 0, 0.10882353, 0)
+		InfoFrame.Size = UDim2.new(0, 445, 0, 303)
+
+		UICorner_14.CornerRadius = UDim.new(0, 1)
+		UICorner_14.Parent = InfoFrame
+
+		TextLabel_2.Parent = InfoFrame
+		TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		TextLabel_2.BackgroundTransparency = 1.000
+		TextLabel_2.Position = UDim2.new(0.274157315, 0, 0.0660066009, 0)
+		TextLabel_2.Size = UDim2.new(0, 200, 0, 50)
+		TextLabel_2.Font = Enum.Font.GothamBlack
+		TextLabel_2.Text = "Made By ayoyao#3744"
+		TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+		TextLabel_2.TextScaled = true
+		TextLabel_2.TextSize = 14.000
+		TextLabel_2.TextStrokeTransparency = 1.020
+		TextLabel_2.TextWrapped = true
+
+		local function XJBSIFR_fake_script() -- RBGFRAME.LocalScript 
+			local script = Instance.new('LocalScript', RBGFRAME)
+
+			local button = script.Parent
+			local gradient = button.UIGradient
+			local ts = game:GetService("TweenService")
+			local ti = TweenInfo.new(1, Enum.EasingStyle.Linear, Enum.EasingDirection.Out)
+			local offset = {Offset = Vector2.new(1, 0)}
+			local create = ts:Create(gradient, ti, offset)
+			local startingPos = Vector2.new(-1, 0)
+			local list = {} 
+			local s, kpt = ColorSequence.new, ColorSequenceKeypoint.new
+			local counter = 0
+			local status = "down" 
+			gradient.Offset = startingPos
+			local function rainbowColors()
+				local sat, val = 255, 255 
+				for i = 1, 15 do 
+					local hue = i * 17 
+					table.insert(list, Color3.fromHSV(hue / 255, sat / 255, val / 255))
+				end
+			end
+			rainbowColors()
+			gradient.Color = s({
+				kpt(0, list[#list]),
+				kpt(0.5, list[#list - 1]),
+				kpt(1, list[#list - 2])
+			})
+			counter = #list
+			local function animate()
+				create:Play()
+				create.Completed:Wait() 
+				gradient.Offset = startingPos 
+				gradient.Rotation = 180
+				if counter == #list - 1 and status == "down" then
+					gradient.Color = s({
+						kpt(0, gradient.Color.Keypoints[1].Value),
+						kpt(0.5, list[#list]), 
+						kpt(1, list[1]) 
+					})
+					counter = 1
+					status = "up" 
+				elseif counter == #list and status == "down" then 
+					gradient.Color = s({
+						kpt(0, gradient.Color.Keypoints[1].Value),
+						kpt(0.5, list[1]),
+						kpt(1, list[2])
+					})
+					counter = 2
+					status = "up"
+				elseif counter <= #list - 2 and status == "down" then 
+					gradient.Color = s({
+						kpt(0, gradient.Color.Keypoints[1].Value),
+						kpt(0.5, list[counter + 1]), 
+						kpt(1, list[counter + 2])
+					})
+					counter = counter + 2
+					status = "up"
+				end
+				create:Play()
+				create.Completed:Wait()
+				gradient.Offset = startingPos
+				gradient.Rotation = 0 
+				if counter == #list - 1 and status == "up" then
+					gradient.Color = s({ 
+
+						kpt(0, list[1]), 
+						kpt(0.5, list[#list]), 
+						kpt(1, gradient.Color.Keypoints[3].Value)
+					})
+					counter = 1
+					status = "down"
+				elseif counter == #list and status == "up" then
+					gradient.Color = s({
+						kpt(0, list[2]),
+						kpt(0.5, list[1]), 
+						kpt(1, gradient.Color.Keypoints[3].Value)
+					})
+					counter = 2
+					status = "down"
+				elseif counter <= #list - 2 and status == "up" then
+					gradient.Color = s({
+						kpt(0, list[counter + 2]), 
+						kpt(0.5, list[counter + 1]), 
+						kpt(1, gradient.Color.Keypoints[3].Value) 	
+					})
+					counter = counter + 2
+					status = "down"
+				end
+				animate()
+			end
+			animate()
+		end
+		coroutine.wrap(XJBSIFR_fake_script)()
+		local function HGCE_fake_script() -- WalkSpeedJumpPower.LocalScript 
+			local script = Instance.new('LocalScript', WalkSpeedJumpPower)
+
+			script.Parent.MouseButton1Down:Connect(function()
+				script.Parent.Parent.Parent.InfoFrame.Visible = false
+				script.Parent.Parent.Parent.MiscFrame.Visible = false
+				script.Parent.Parent.Parent.Walkjumpframe.Visible = true
+			end)
+		end
+		coroutine.wrap(HGCE_fake_script)()
+		local function JRDYV_fake_script() -- MiscButton.LocalScript 
+			local script = Instance.new('LocalScript', MiscButton)
+
+			script.Parent.MouseButton1Down:Connect(function()
+				script.Parent.Parent.Parent.InfoFrame.Visible = false
+				script.Parent.Parent.Parent.MiscFrame.Visible = true
+				script.Parent.Parent.Parent.Walkjumpframe.Visible = false
+			end)
+		end
+		coroutine.wrap(JRDYV_fake_script)()
+		local function HLGA_fake_script() -- InfoButton.LocalScript 
+			local script = Instance.new('LocalScript', InfoButton)
+
+			script.Parent.MouseButton1Down:Connect(function()
+				script.Parent.Parent.Parent.InfoFrame.Visible = true
+				script.Parent.Parent.Parent.MiscFrame.Visible = false
+				script.Parent.Parent.Parent.Walkjumpframe.Visible = false
+			end)
+		end
+		coroutine.wrap(HLGA_fake_script)()
+	else
+		WrongKey.Visible = true
+	end
+end)
 
 UICorner_3.Parent = TextButton
 
@@ -153,7 +538,7 @@ UICorner_8.Parent = TextButton_3
 
 -- Scripts:
 
-local function XVNQNZO_fake_script() -- MainGui.LocalScript 
+local function KUFI_fake_script() -- MainGui.LocalScript 
 	local script = Instance.new('LocalScript', MainGui)
 
 	local button = script.Parent
@@ -246,8 +631,8 @@ local function XVNQNZO_fake_script() -- MainGui.LocalScript
 	end
 	animate()
 end
-coroutine.wrap(XVNQNZO_fake_script)()
-local function YNAZSVQ_fake_script() -- TextBox.LocalScript 
+coroutine.wrap(KUFI_fake_script)()
+local function JQNS_fake_script() -- TextBox.LocalScript 
 	local script = Instance.new('LocalScript', TextBox)
 
 	script.Parent.Parent.TextButton.MouseButton1Down:Connect(function()
@@ -259,8 +644,8 @@ local function YNAZSVQ_fake_script() -- TextBox.LocalScript
 		end
 	end)
 end
-coroutine.wrap(YNAZSVQ_fake_script)()
-local function HHLXDJQ_fake_script() -- Frame.LocalScript 
+coroutine.wrap(JQNS_fake_script)()
+local function SYQCXSR_fake_script() -- Frame.LocalScript 
 	local script = Instance.new('LocalScript', Frame)
 
 	local button = script.Parent
@@ -353,12 +738,12 @@ local function HHLXDJQ_fake_script() -- Frame.LocalScript
 	end
 	animate()
 end
-coroutine.wrap(HHLXDJQ_fake_script)()
-local function BVXHLS_fake_script() -- TextButton_3.LocalScript 
+coroutine.wrap(SYQCXSR_fake_script)()
+local function JAWZCQI_fake_script() -- TextButton_3.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_3)
 
 	script.Parent.MouseButton1Down:Connect(function()
 		script.Parent.Parent.Visible = false
 	end)
 end
-coroutine.wrap(BVXHLS_fake_script)()
+coroutine.wrap(JAWZCQI_fake_script)()
