@@ -85,7 +85,7 @@ TextButton.TextScaled = true
 TextButton.TextSize = 14.000
 TextButton.TextWrapped = true
 TextButton.MouseButton1Down:Connect(function()
-	if TextBox.Text == "ONLYWXEEILMAO" or TextBox.Text == "v1TESTER_JWIASD2" then
+	if TextBox.Text == "ONLYWXEEILMAO" or TextBox.Text == "v1TESTER_JWIASD2" or TextBox.Text == "KDnEUmd03_jfn45CA" then
 		OfficialBitZKeySystem:Destroy()
 		local ElectrowareSG = Instance.new("ScreenGui")
 local MainFrame = Instance.new("Frame")
