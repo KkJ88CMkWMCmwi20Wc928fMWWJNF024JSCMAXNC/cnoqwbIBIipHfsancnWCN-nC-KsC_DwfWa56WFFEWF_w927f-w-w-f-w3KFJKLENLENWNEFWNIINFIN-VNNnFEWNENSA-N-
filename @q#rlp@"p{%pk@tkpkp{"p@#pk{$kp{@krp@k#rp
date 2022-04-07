@@ -262,7 +262,7 @@ TextButton.MouseButton1Down:Connect(function()
 		TextLabel.Position = UDim2.new(0.349313587, 0, 0.243367508, 0)
 		TextLabel.Size = UDim2.new(0, 246, 0, 38)
 		TextLabel.Font = Enum.Font.GothamBlack
-		TextLabel.Text = "Electroware v0.9.2"
+		TextLabel.Text = "Electroware v0.9.2(testing)"
 		TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
 		TextLabel.TextScaled = true
 		TextLabel.TextSize = 14.000
